@@ -94,6 +94,16 @@ The default keyboard layout is **French (AZERTY)**. If you want to use a differe
 - To understand how HID devices work with CircuitPython, check out [Adafruit_CircuitPython_HID](https://github.com/adafruit/Adafruit_CircuitPython_HID/).
 
 ---
+## **⚙️ Optional Features**
+
+- **USE THIS FOR DISABLE MASS STORAGE** - you need to make a **`boot.py`** file in the main, put this code in it.
+```python
+import storage
+storage.disable_usb_drive()
+```
+To reset your Raspberry Pi Pico, hold the **BOOTSEL** button before plugging it in and release the button when plugged in, this will put the Raspberry Pi into **`default`** mode, in this mode use the **`flash_nuke.uf2`** file in the github repository, this will reset the Pico, you just need to place it in the Pico Storage.
+
+---
 
 ## **👨‍💻 Authors**
 
