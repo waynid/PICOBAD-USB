@@ -5,7 +5,7 @@ from keycode_win_fr import Keycode as badUSB
 from adafruit_hid.keyboard import Keyboard
 from keyboard_layout_win_fr import KeyboardLayout as KeyboardLayoutFR                                                                         
 
-time.sleep(3)
+time.sleep(5)
 
 keyboard = Keyboard(usb_hid.devices)
 
@@ -36,6 +36,12 @@ keyboard.send(badUSB.ENTER)
 
 layout.write("cls && echo Welcome to PICOBAD-USB ! THIS IS THE BASE CODE.")
     
+keyboard.send(badUSB.ENTER)
+
+time.sleep(1)
+
+layout.write("start https://github.com/waynid/PICOBAD-USB")
+
 keyboard.send(badUSB.ENTER)
 
 time.sleep(1)
