@@ -24,8 +24,6 @@ time.sleep(1)
 
 layout.write("cmd")
 
-time.sleep(1)
-
 keyboard.send(badUSB.ENTER)
 
 time.sleep(1)
