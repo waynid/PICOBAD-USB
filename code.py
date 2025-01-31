@@ -26,7 +26,7 @@ layout.write("cmd")
 
 keyboard.send(badUSB.ENTER)
 
-time.sleep(1)
+time.sleep(3)
 
 layout.write("@echo off")
     
@@ -36,9 +36,9 @@ layout.write("cls && echo Welcome to PICOBAD-USB ! THIS IS THE BASE CODE.")
     
 keyboard.send(badUSB.ENTER)
 
-time.sleep(1)
+time.sleep(2)
 
-layout.write("start https://github.com/waynid/PICOBAD-USB")
+layout.write("start https://github.com/waynid/PICOBAD-USB && exit")
 
 keyboard.send(badUSB.ENTER)
 
